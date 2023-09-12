@@ -1,0 +1,299 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 1fr;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+@media (min-width: 208px) {
+  body {
+    grid-template-rows: 1fr;
+  }
+}
+/* nav styling */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+.navbar {
+  grid-area: 1/1/-1/2;
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background: #1992d4;
+  color: #fff;
+  padding: 2rem;
+  height: 70rem;
+}
+.main-navbar,
+.sec-navbar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.3rem;
+  transition: background 1s ease, font-size 1s ease;
+}
+.icon:hover {
+  cursor: pointer;
+  font-size: 1.1rem;
+  background-color: #056396;
+}
+.fa-solid {
+  color: white;
+}
+.logo-header {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-shadow: 1px 0px 0px;
+}
+img {
+  width: 3rem;
+  color: white;
+}
+/* Heading stylling */
+.header {
+  display: grid;
+  background-color: white;
+  width: 100%;
+  height: 12rem;
+  gap: 1rem;
+  max-width: 30rem;
+  position: relative;
+  left: -50rem;
+}
+.longbutton {
+  width: 32rem;
+  height: 2rem;
+  background-color: #e2e8f0;
+  border-radius: 20px;
+  border: 2px solid #e2e8f0;
+  margin-top: -0.9rem;
+  margin-left: 2.5rem;
+}
+.sideheader {
+  margin-left: 3rem;
+}
+.fa-search {
+  margin-left: -1rem;
+  margin-top: 2rem;
+  position: relative;
+  top: 0.8rem;
+}
+.rightheader {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15rem;
+  gap: 1rem;
+  margin-top: -3.4rem;
+  position: relative;
+  top: 0.01rem;
+  left: 41rem;
+}
+h4 {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+.fa-bell {
+  margin-top: 1rem;
+}
+
+.leftheader {
+  margin-left: 1.2rem;
+  margin-top: -2.2rem;
+}
+h2 {
+  margin-left: 6.2rem;
+}
+.leftheader img {
+  width: 4.5rem;
+  margin-top: 1.5rem;
+  margin-right: 1.5rem;
+  position: relative;
+  top: 1.5rem;
+  left: 1.2rem;
+}
+.leftheader span {
+  position: relative;
+  top: -1.7rem;
+  left: 0.01rem;
+}
+.leftheader h2 {
+  position: relative;
+  top: -1.3rem;
+}
+.dwbutton button {
+  background-color: blue;
+  border: 2px solid blue;
+  border-radius: 1.4rem;
+  width: 5.3rem;
+  height: 2rem;
+  color: white;
+  gap: 0.5rem;
+  margin-top: -3rem;
+  margin-left: 1rem;
+  position: relative;
+  left: 48rem;
+  top: -3.5rem;
+  align-items: flex-end;
+}
+
+/* End of header stylying */
+
+/* Main content styling */
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background-color: #e2e8f0;
+  margin-top: 1.2rem;
+  box-shadow: 2px 2px 2px solid transparent;
+  position: relative;
+  left: 20rem;
+  top: -55rem;
+  width: 70rem;
+  height: 53.8rem;
+}
+.project {
+  display: grid;
+  grid-template-columns: 25rem 25rem;
+  grid-template-rows: 15rem 15rem 15rem;
+  margin-left: 1rem;
+  margin-top: 3rem;
+  text-align: left;
+  font-size: 1rem;
+  gap: 1rem;
+}
+.main span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.main h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: relative;
+  top: 2rem;
+  left: -4rem;
+}
+h5 {
+  background-color: white;
+  border-left: 6px solid rgb(206, 206, 67);
+  word-spacing: 0.5rem;
+  border-radius: 5px;
+  box-sizing: 20px 1px 1px 1px solid transparent;
+  width: 25rem;
+  height: 12rem;
+  padding: 15px 20px;
+}
+.project span {
+  font-size: 1.1rem;
+  margin: auto 0;
+  margin-left: 1rem;
+  font-weight: bold;
+  padding-top: 20px;
+  text-align: left;
+  position: relative;
+  left: -1rem;
+  top: 1rem;
+}
+.announcement {
+  display: grid;
+  grid-template-columns: 5rem;
+  position: relative;
+  bottom: 48.2rem;
+  left: 53.5rem;
+}
+.project p {
+  position: relative;
+  top: 1.4rem;
+  font-family: monospace;
+  font-weight: light;
+  width: 15rem;
+}
+
+.card-icon {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: 3rem;
+  gap: 25px;
+  font-size: 1.2rem;
+}
+.card2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  grid-template-columns: 15rem;
+  background-color: white;
+  border-radius: 3px;
+  border-bottom: black;
+  width: 17rem;
+  height: 20rem;
+  margin-bottom: 1rem;
+  border: 10px solid white;
+  padding-bottom: 2rem;
+  line-height: 1.6rem;
+}
+.card3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  grid-template-columns: 15rem;
+  background-color: white;
+  border-radius: 3px;
+  width: 17rem;
+  height: 20rem;
+  margin-bottom: 1rem;
+  position: relative;
+  top: 0.3rem;
+  border: 10px solid white;
+  padding-bottom: 2rem;
+  line-height: 2rem;
+  padding-left: 4rem;
+}
+.announcement h3 {
+  position: relative;
+  top: -1rem;
+}
+
+.announcement h4 {
+  position: relative;
+  top: 0.1rem;
+}
+.card2 p {
+  border-bottom: 1px solid black;
+  font-size: 0.7rem;
+  width: 13.5rem;
+}
+.card2 h6 {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.animation {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: stretch;
+  gap: 1.4rem;
+  position: relative;
+  top: 16rem;
+  left: -3rem;
+}
