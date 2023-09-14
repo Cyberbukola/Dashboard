@@ -172,9 +172,6 @@ h2 {
   width: 75rem;
   height: 53.8rem;
 }
-.main:hover {
-  cursor: pointer;
-  transform: scaleZ(20%);
 
 .project {
   display: grid;
