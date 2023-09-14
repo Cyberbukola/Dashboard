@@ -169,9 +169,13 @@ h2 {
   position: relative;
   left: 20rem;
   top: -55rem;
-  width: 70rem;
+  width: 75rem;
   height: 53.8rem;
 }
+.main:hover {
+  cursor: pointer;
+  transform: scaleZ(20%);
+
 .project {
   display: grid;
   grid-template-columns: 25rem 25rem;
@@ -243,7 +247,7 @@ h5 {
   justify-content: flex-end;
   grid-template-columns: 15rem;
   background-color: white;
-  border-radius: 3px;
+  border-radius: 5px;
   border-bottom: black;
   width: 17rem;
   height: 20rem;
@@ -258,7 +262,7 @@ h5 {
   justify-content: flex-end;
   grid-template-columns: 15rem;
   background-color: white;
-  border-radius: 3px;
+  border-radius: 5px;
   width: 17rem;
   height: 20rem;
   margin-bottom: 1rem;
